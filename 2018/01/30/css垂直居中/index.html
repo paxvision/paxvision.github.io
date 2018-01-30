@@ -84,15 +84,25 @@
 
 
 
-<meta name="description" content="走好每一步！">
-<meta property="og:type" content="website">
+<meta name="description" content="css垂直居中1、设置父元素position:relative，子元素position:absolute（1）如果已知父元素和子元素的宽高
+HTML代码
+123&amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;    &amp;lt;div class=&amp;quot;child&amp;quot;&amp;gt;我是垂直居中元素&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+CSS代码1234567891">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Yuequanling">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/01/30/css垂直居中/index.html">
 <meta property="og:site_name" content="Yuequanling">
-<meta property="og:description" content="走好每一步！">
+<meta property="og:description" content="css垂直居中1、设置父元素position:relative，子元素position:absolute（1）如果已知父元素和子元素的宽高
+HTML代码
+123&amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;    &amp;lt;div class=&amp;quot;child&amp;quot;&amp;gt;我是垂直居中元素&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+CSS代码1234567891">
+<meta property="og:updated_time" content="2018-01-29T13:22:23.264Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Yuequanling">
-<meta name="twitter:description" content="走好每一步！">
+<meta name="twitter:description" content="css垂直居中1、设置父元素position:relative，子元素position:absolute（1）如果已知父元素和子元素的宽高
+HTML代码
+123&amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;    &amp;lt;div class=&amp;quot;child&amp;quot;&amp;gt;我是垂直居中元素&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+CSS代码1234567891">
 
 
 
@@ -110,7 +120,7 @@
   };
 </script>
 
-  <title> Yuequanling </title>
+  <title>  | Yuequanling </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -150,9 +160,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -249,9 +257,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -272,9 +280,6 @@
             
               
                 
-                <a class="post-title-link" href="/2018/01/30/css垂直居中/" itemprop="url">
-                  未命名
-                </a>
               
             
           </h1>
@@ -314,9 +319,7 @@
       
 
       
-        
-          
-            <h1 id="css垂直居中"><a href="#css垂直居中" class="headerlink" title="css垂直居中"></a>css垂直居中</h1><h3 id="1、设置父元素position-relative，子元素position-absolute"><a href="#1、设置父元素position-relative，子元素position-absolute" class="headerlink" title="1、设置父元素position:relative，子元素position:absolute"></a>1、设置父元素<code>position:relative</code>，子元素<code>position:absolute</code></h3><p>（1）如果已知父元素和子元素的宽高</p>
+        <h1 id="css垂直居中"><a href="#css垂直居中" class="headerlink" title="css垂直居中"></a>css垂直居中</h1><h3 id="1、设置父元素position-relative，子元素position-absolute"><a href="#1、设置父元素position-relative，子元素position-absolute" class="headerlink" title="1、设置父元素position:relative，子元素position:absolute"></a>1、设置父元素<code>position:relative</code>，子元素<code>position:absolute</code></h3><p>（1）如果已知父元素和子元素的宽高</p>
 <p>HTML代码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;box&quot;&gt;</div><div class="line">    &lt;div class=&quot;child&quot;&gt;我是垂直居中元素&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
 <p>CSS代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">#box &#123;</div><div class="line">    width: 300px;</div><div class="line">    height: 300px;</div><div class="line">    background: #ddd;</div><div class="line">    position: relative;</div><div class="line">&#125;</div><div class="line">#child &#123;</div><div class="line">    width: 150px;</div><div class="line">    height: 100px;</div><div class="line">    background: orange;</div><div class="line">    position: absolute;</div><div class="line">    top: 50%;</div><div class="line">    margin: -50px 0 0 0;</div><div class="line">    line-height: 100px;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -363,16 +366,19 @@
 <p>CSS代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#box &#123;</div><div class="line">    width: 300px;</div><div class="line">    height: 300px;</div><div class="line">    background: #ddd;</div><div class="line">    display: table;</div><div class="line">&#125;</div><div class="line">#child &#123;</div><div class="line">    display: table-cell;</div><div class="line">    vertical-align: middle;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p><strong>vertical-align属性只对拥有valign特性的html元素起作用，例如表格元素中的<td><th>等等，而像<div><span>这样的元素是不行的</span></div></th></td></strong></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -380,203 +386,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/01/30/Flex布局/" rel="next" title="Flex布局">
+                <i class="fa fa-chevron-left"></i> Flex布局
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2018/01/30/Flex布局/" itemprop="url">
-                  Flex布局
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2018-01-30T15:50:04+08:00" content="2018-01-30">
-              2018-01-30
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="Flex"><a href="#Flex" class="headerlink" title="Flex"></a>Flex</h1><h4 id="Flex-是-Flexible-Box-的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。"><a href="#Flex-是-Flexible-Box-的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。" class="headerlink" title="Flex 是 Flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。"></a>Flex 是 Flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。</h4><ul>
-<li><p>任何一个容器都可以指定为Flex布局</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.box &#123;</div><div class="line">    display: flex;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>行内元素也可以设置为flex布局</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.box &#123;</div><div class="line">    display: inline-flex;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>webkit内核的浏览器必须加上<code>-webkit</code>前缀</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">.box &#123;</div><div class="line">    display: -webkit-flex; /*Safari浏览器*/</div><div class="line">    display: felx;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p><strong>设为Flex布局后，子元素的<code>float</code>、<code>clear</code>、<code>vertical-align</code>将失效</strong></p>
-<h3 id="Flex容器的属性"><a href="#Flex容器的属性" class="headerlink" title="Flex容器的属性"></a>Flex容器的属性</h3><h4 id="Flex一共有6个属性"><a href="#Flex一共有6个属性" class="headerlink" title="Flex一共有6个属性"></a>Flex一共有6个属性</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">· flex-direction</div><div class="line">· flex-wrap</div><div class="line">· flex-flow</div><div class="line">· justify-content</div><div class="line">· align-item</div><div class="line">· align-content</div></pre></td></tr></table></figure>
-<ul>
-<li><p>flex-direction属性</p>
-<p>  <code>flex-direction</code>属性决定主轴方向（即项目的排列方向）<br>  有四个可能的值</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">· row（默认值）：主轴为水平方向，起点在左端</div><div class="line">· row-reverse：主轴为水平方向，起点在右端</div><div class="line">· column：主轴为垂直方向，起点在上沿</div><div class="line">· column-reverse：主轴为垂直方向，起点在下沿</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>flex-wrap属性</p>
-<p>  默认情况下，所有的项目都排在一条线（又称“轴线”）上，<code>flex-wrap</code>属性定义了如果一行排不下，该如何换行</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">· nowrap（默认值）：不换行</div><div class="line">· wrap：换行，在第一行下面</div><div class="line">· wrap-reverse：换行，在第一行上面</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>flex-flow属性</p>
-<p>  <code>flex-flow</code>是<code>flex-direction</code> <code>flex-wrap</code>的简写，默认值是<code>row nowrap</code></p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.box &#123;</div><div class="line">    flex-flow: &lt;flex-direction&gt; || &lt;flex-wrap&gt;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>justify-content属性</p>
-<p>  <code>justify-content</code>属性定义了项目再主轴上的对齐方式</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.box &#123;</div><div class="line">    justify-content: flex-start | flex-end | center | space-between | space-around;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>  有5中可能的值</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">· flex-start（默认值）：左对齐</div><div class="line">· flex-end：右对齐</div><div class="line">· center： 居中</div><div class="line">· space-between：两端对齐，项目之间的间隔都相等。</div><div class="line">· space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>align-item属性</p>
-<p>  <code>align-item</code>属性定义了项目再交叉轴上的对齐方式</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.box &#123;</div><div class="line">    align-item: flex-start | flex-end | center | baseline | stretch;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>  有5中可能的值</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">· flex-start：交叉轴的起点对齐。</div><div class="line">· flex-end：交叉轴的终点对齐。</div><div class="line">· baseline: 项目的第一行文字的基线对齐。</div><div class="line">· stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>align-content属性</p>
-<p>  <code>align-content</code>属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</p>
-</li>
-</ul>
-<h3 id="项目的属性"><a href="#项目的属性" class="headerlink" title="项目的属性"></a>项目的属性</h3><h4 id="项目的属性一共有6个"><a href="#项目的属性一共有6个" class="headerlink" title="项目的属性一共有6个"></a>项目的属性一共有6个</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">· order</div><div class="line">· flex-grow</div><div class="line">· flex-shrink</div><div class="line">· flex-basis</div><div class="line">· flex</div><div class="line">· align-self</div></pre></td></tr></table></figure>
-<ul>
-<li><p>order属性</p>
-<p>  <code>align-item</code>属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.item &#123;</div><div class="line">    order: &lt;integer&gt;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>flex-grow属性</p>
-<p>  <code>flex-grow</code>属性定义了项目的放大比例，默认值为0，即如果存在剩余空间他也不会放大</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.item &#123;</div><div class="line">    flex-grow: &lt;number&gt;;  /*default 0*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>  <strong>如果所有项目的<code>flex-grow</code>属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。</strong></p>
-</li>
-</ul>
-<ul>
-<li><p>flex-shrink属性</p>
-<p>  <code>flex-shrink</code>属性定义了项目的缩小比例，默认值为1，即如果空间不足，该项目将缩小</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.item &#123;</div><div class="line">    flex-shrink: &lt;number&gt;;  /*default 1*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>  <strong>如果所有项目的<code>flex-shrink</code>属性都为1，当空间不足时，都将等比例缩小。如果一个项目的<code>flex-shrink</code>属性为0，其他项目都为1，则空间不足时，前者不缩小。</strong></p>
-</li>
-</ul>
-<ul>
-<li><p>flex-basis属性</p>
-<p>  <code>flex-basis</code>属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为<code>auto</code>，即项目的本来大小。</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.item &#123;</div><div class="line">    flex-basis: &lt;length&gt; | auto;  /*default auto*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>  <strong>它可以设为跟<code>width</code>或<code>height</code>属性一样的值（比如350px），则项目将占据固定空间。</strong></p>
-</li>
-<li><p>flex属性</p>
-<p>  <code>flex</code>属性是<code>flex-grow</code>、<code>flex-shrink</code>、<code>flex-basis</code>的缩写，默认值为0 1 auto，后两个属性可选</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.item &#123;</div><div class="line">    flex: none | [ &lt;&apos;flex-grow&apos;&gt; &lt;&apos;flex-shrink&apos;&gt;? || &lt;&apos;flex-basis&apos;&gt; ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>align-self属性</p>
-<p> <code>align-self</code>属性允许单个项目与其他项目不一样的对齐方式，可覆盖<code>align-item</code>属性，默认值为<code>auto</code>，表示继承父元素的<code>align-item</code>属性，如果没有父元素，则等同于<code>stretch</code></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.item &#123;</div><div class="line">    align-self: auto | flex-start | flex-end | center | baseline | stretch;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p> <strong>该属性可能取6个值，出了<code>auto</code>，其他都与<code>align-items</code>属性一致</strong></p>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -584,6 +419,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -603,8 +442,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/头像.png"
@@ -669,6 +517,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#css垂直居中"><span class="nav-number">1.</span> <span class="nav-text">css垂直居中</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、设置父元素position-relative，子元素position-absolute"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、设置父元素position:relative，子元素position:absolute</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、使用padding实现子元素的垂直居中"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、使用padding实现子元素的垂直居中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、设置第三方基准"><span class="nav-number">1.0.3.</span> <span class="nav-text">3、设置第三方基准</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、使用flex布局"><span class="nav-number">1.0.4.</span> <span class="nav-text">4、使用flex布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6、使用display和vertical-align对容器里的文字进行垂直居中"><span class="nav-number">1.0.5.</span> <span class="nav-text">6、使用display和vertical-align对容器里的文字进行垂直居中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、-使用display和vertical-align对容器里的文字进行垂直居中"><span class="nav-number">1.0.6.</span> <span class="nav-text">5、 使用display和vertical-align对容器里的文字进行垂直居中</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -777,6 +636,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
